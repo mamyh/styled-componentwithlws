@@ -2,7 +2,7 @@ import React from 'react'
 
 const Button = ({link,text}) => {
   return (
-    <div>Button</div>
+    <a href={link} target='_blank'>{text}</a>
   )
 }
 

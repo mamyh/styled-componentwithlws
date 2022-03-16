@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
-import { H1, P, Tag } from './styles/Elements.styles'
-import { CardContainer,ContentContainer } from './styles/Container.styles'
+import { H1, Image, P, Tag } from './styles/Elements.styles'
+import { ButtonContainer, CardContainer,ContentContainer } from './styles/Container.styles'
 
 const Card = () => {
   return (
@@ -12,11 +12,12 @@ const Card = () => {
             <P>
                 Exclusive React JS Tutorial on Styled Components Where you will learn why we need this and how to use it 
             </P>
-            <div className='buttons'>
+            <ButtonContainer>
                 <Button link="https://lwsbd.link/rsc" text="Watch now" />
                 <Button link="https://lwsbd.link/react" text="Github repo" />
-            </div>
+            </ButtonContainer>
         </ContentContainer>
+        <Image src={nerdImage} alt="nerd" width="300px"/>
     </CardContainer>
   )
 }
